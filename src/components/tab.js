@@ -3,8 +3,8 @@ import React, { useEffect, useContext } from 'react'
 import { context } from './plugin-provider'
 
 export const Tab = ({ name, children }) => {
-  const { constants, tabbing, env } = useContext(context)
-  const { pushTab, removeTab, currentTab } = tabbing
+  const { constants, tabs, env } = useContext(context)
+  const { pushTab, removeTab, currentTab } = tabs
 
   useEffect(() => {
     pushTab(name)
