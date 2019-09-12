@@ -18,6 +18,7 @@ const { Provider } = context
   alarms        - ( bg only ) a way to listen to heartbeat ticks
   model         - data structure for db
   constants     - constants variables defined in the extension
+  permissions   - access to chrome permissions
 */
 
 export const PluginProvider = ({
@@ -29,8 +30,9 @@ export const PluginProvider = ({
   constants,
   alarms,
   model,
+  permissions,
 }) => (
   <Provider
-    value={{ env, extension, storage, config, constants, alarms, model }}
+    value={{ env, extension, storage, config, constants, alarms, model, permissions }}
   ></Provider>
 )
