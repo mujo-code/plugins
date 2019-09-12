@@ -29,8 +29,11 @@ export const PluginProvider = ({
   constants,
   alarms,
   model,
+  children,
 }) => (
   <Provider
     value={{ env, extension, storage, config, constants, alarms, model }}
-  ></Provider>
+  >
+    {children}
+  </Provider>
 )

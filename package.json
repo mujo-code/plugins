@@ -2,7 +2,7 @@
   "name": "@mujo/plugins",
   "version": "0.0.1",
   "description": "A set of utilities to create plugins in Mujo",
-  "main": "index.js",
+  "main": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mujo-code/plugins.git"
@@ -29,6 +29,7 @@
     "@babel/preset-react": "^7.0.0",
     "@emotion/core": "^10.0.14",
     "@mujo/eslint-config": "^1.0.4",
+    "@mujo/ingress": "^0.1.0",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-react-app": "^9.0.1",
     "eslint": "^5.16.0",
@@ -43,7 +44,8 @@
   },
   "peerDependencies": {
     "@emotion/core": ">=10.0.14",
-    "react": ">=16.8.6"
+    "react": ">=16.8.6",
+    "@mujo/ingress": ">=0.1.0"
   },
   "jest": {
     "collectCoverageFrom": [
