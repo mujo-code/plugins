@@ -1,6 +1,6 @@
 {
   "name": "@mujo/plugins",
-  "version": "0.0.2",
+  "version": "0.0.6",
   "description": "A set of utilities to create plugins in Mujo",
   "main": "dist/index.js",
   "repository": {
@@ -9,6 +9,9 @@
   },
   "keywords": [
     "react"
+  ],
+  "files": [
+    "dist/**/*"
   ],
   "author": "Jacob Lowe",
   "license": "ISC",
@@ -27,11 +30,11 @@
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
+    "@babel/runtime": "^7.6.0",
     "@emotion/core": "^10.0.14",
     "@mujo/eslint-config": "^1.0.4",
     "@mujo/ingress": "^0.1.0",
     "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-react-app": "^9.0.1",
     "eslint": "^5.16.0",
     "jest": "^24.9.0",
     "jest-environment-jsdom-fourteen": "0.1.0",
@@ -79,7 +82,11 @@
   },
   "babel": {
     "presets": [
-      "react-app"
+      "@babel/preset-env",
+      "@babel/preset-react"
     ]
-  }
+  },
+  "browserslist": [
+    "last 3 Chrome versions"
+  ]
 }

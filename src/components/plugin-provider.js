@@ -18,6 +18,7 @@ const { Provider } = context
   alarms        - ( bg only ) a way to listen to heartbeat ticks
   model         - data structure for db
   constants     - constants variables defined in the extension
+  tabs          - ( ntp only ) some functions and state for tabs
 */
 
 export const PluginProvider = ({
