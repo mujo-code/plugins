@@ -9,6 +9,7 @@ export const Tab = ({ name, children }) => {
   useEffect(() => {
     pushTab(name)
     return removeTab(name)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [name])
   // only supported on ntp page
   if (env !== 'ntp') return null
