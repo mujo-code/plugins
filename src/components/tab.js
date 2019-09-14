@@ -10,7 +10,7 @@ export const Tab = ({ name, children }) => {
     pushTab(name)
     return removeTab(name)
   }, [name])
-
+  // only supported on ntp page
   if (env !== 'ntp') return null
   if (name !== currentTab) return null
   return <Ingress target={constants.TABS_TARGET}>{children}</Ingress>
