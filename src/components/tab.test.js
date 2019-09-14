@@ -1,9 +1,10 @@
 import { render } from '@testing-library/react'
 import React from 'react'
 import { PluginProvider } from './plugin-provider'
-import { Tab } from './Tab'
+import { Tab } from './tab'
 
 jest.mock('@mujo/ingress')
+// eslint-disable-next-line import-order-alphabetical/order
 const { Ingress } = require('@mujo/ingress')
 
 describe('Tab component', () => {
